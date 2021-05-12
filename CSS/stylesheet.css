@@ -10,40 +10,38 @@ body    {
 #page {
         width : 100%;
         }
+
+
+/* header*/
 header  {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0px 50px 0 50px ; 
+        padding: 30px 50px 0 50px ; 
+        }
+div .logoReservia img {
+        height: auto; 
+        width : 110px;
+        object-fit: auto;
         }
 
-/* header*/
-.logoReservia img {
-        width: 100px;
-        object-fit: none;
-        }  
-
-nav ul    {
+nav ul  {
         display: flex;
-        list-style-type: none;
-
         }
-nav li
-        {
-        padding-left: 60px;
+nav li  {
+        padding-left: 80px;
         color: #0065fc; 
-        font-weight:700;     
+        font-weight:700;
+        font-size: 1.2em;    
         }
-
 a       {
         text-decoration: none;
         }
-
 nav a:visited {
         color: #0065fc; 
         }       
 nav a:hover {
-        color: #000000; 
+        opacity:0.5;
         text-decoration: none;
         }
 
@@ -51,6 +49,9 @@ nav a:hover {
 
 .searchZone {
         padding: 0 0 0 50px; 
+        }
+.searchTitle p {
+        padding: 0.5em 0 5px 0;
         }
 .searchBox {
         display:flex;
@@ -69,41 +70,57 @@ nav a:hover {
 .filters {
         display: flex;
         align-items: center;
-        margin-top: 1em;
-        }
-        
-.filters div {
-        margin-right: 30px;
+        margin-top: 25px;
         }
         
 .filtersButton {
+        display: flex;
         text-decoration: none;
         }
         
 button {
-        padding: 0.8em; 
-        margin-right: 30px;
-        font-size: 1.1em;
-        font-weight:700;   
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        height: 40px;
+        padding: 0 1em 0 0;
+        margin-right: 30px; 
         background-color: white;
-        border-radius: 1em; 
+        border-radius: 1.5em; 
         border: 1px solid #aaa1a1;
         }
-        
+
+.filtersButton i {
+        display: flex;
+        align-items: center;       
+        color: #0065fc;
+        }
+
+div .icone{
+        display: flex;
+        justify-content: center; 
+        width : 40px;
+        height: 40px;
+        margin-right : 0.8em;
+        border-radius: 1.5em; 
+        background-color: #0065fc3b;
+        }     
+
 button:hover {
         color: #0065fc; 
         opacity:0.5;
         } 
+.i {text-align: center;}
 
 .info {
         display: flex;
         align-items: center;
         margin: 10px 0 10px 0;
-
-}
+        }
 
 .fa-info {
-        color: #0065fc; 
+        color: #0065fc;
+        text-align: center;
         width: 15px; height:15px;
         padding:7px;
         margin-right: 0.4em;
@@ -117,7 +134,13 @@ h1      {
         font-family: 'Raleway', Arial, Helvetica, sans-serif; 
         font-weight:700;
         font-size: 1.5em;
+        margin: 20px 0 0 0;
+        letter-spacing : -0.03em;
         color :black;
+        }
+p       { 
+        padding :  0 0 0 0.5em;
+        margin : 0 0 8px 0;
         }
 
 h2      {
@@ -126,29 +149,33 @@ h2      {
         font-size: 1.5em;
         color : black;
         }
-h3      {
-        margin: 0;
+h3, button {
+        margin: 0 30px 0 0;
+        font-size: 1.2em;
+        font-weight:700; 
         }
 
-h4      {
+h4, div form {
         font-size: 1.1em;
+        letter-spacing : -0.03em;
         margin: 0.5em 0 0.5em 0.5em;        
         }  
-p       {
-        font-size: 1em;
-        margin: 0.5em 0 0.5em 0.5em;        
-        } 
+
 
 .note   {
         margin: 0 0 0.5em 0.5em;        
         }  
 
 .fa-star {
-        color: #0065fc; 
+        color: #0065fc;
+        font-size: 0.8em; 
         } 
 
 a:visited {
         color:inherit;
+        }
+ul      {
+        list-style-type: none;
         }
 
 /* accomodation & Popular*/       
@@ -166,8 +193,6 @@ a:visited {
         }
 
 .popular {
-        display: flex; 
-        flex-direction: column;
         width:30%; 
         padding:30px 30px 0 30px;
         margin-left: 30px;
@@ -187,28 +212,38 @@ a:visited {
         flex-wrap: wrap;
         }
 
-
-.articleAccomodation {
+.articleAccomodation, .articlePopular {
         width: 28%;
         background-color: white;
         border-radius: 30px;
         padding: 8px;
         margin-bottom: 30px;
-        margin-right: 30px;
         box-shadow: 0px 0px 10px rgb(88, 84, 84);
-        }         
+        }  
+.articleAccomodation {
+        width: 28%;
+        margin-right: 30px;
+        } 
+        
+div .more {
+        margin : 0 0 30px 0;       
+        }
 
-div img {
+.articlePopular {
+        display: flex;
+        width: 100%;
+        }        
+
+div .imgAccomodation img {
         height: 115px;
         width: 100%;
         border-radius: 20px 20px 0 0;
         object-fit : cover;
         }
 
-.more {
-        align-content: flex-start;
+.fa-chart-line {
+        font-size: 1.5em;
         }
-
 .pictoPopular {
         display: flex;
         justify-content: space-between;
@@ -216,42 +251,33 @@ div img {
 
 .articlePopular > a {   
         display: flex;
-        }
-
-.articlePopular {
-        display: flex;
-        background-color: white;
-        width: 100%;
-        height: auto;
-        border-radius: 30px;
-        padding : 8px;
-        margin-bottom: 30px;
-        box-shadow: 0px 0px 10px rgb(88, 84, 84);
         } 
 
 div .imgPopular img {
-        margin-right: 1em;
-        height: 140px;
-        width: 150px;
+        width: 100%;
+        height: 100%;
         border-radius: 20px 0 0 20px ;
+        object-fit : cover;
+        }
+div .imgPopular {
+        margin-right: 1em;
+        width: 40%;
+        height: 140px;
+        object-fit : cover;
+        }
+div .textPopular  { 
+        width: 60% ;
+        padding: 0 4em 0 0 ; 
         }
 
-.textPopular {
-        display: flex;
-        flex-direction: column;
-        width : 170px;
-        }
-.textPopular div { 
-        padding-top: 1.3em;
-        } 
+/*article Activity*/
 
 .activity {
         margin : 0 0 0 50px; 
         }
         
-.articleActivity, .activityPort, .activityFort, .activityIles, .activityCalanques, .activityLongchamp, .activityGarde {
+.activityPort, .activityFort, .activityIles, .activityCalanques, .activityLongchamp, .activityGarde {
         width: 335px;
-        height : 220px;
         margin : 0 30px 30px 0;
         background-color: white;
         border-radius: 20px;
@@ -271,14 +297,52 @@ div .imgPopular img {
 .activityLongchamp, .activityGarde {
         height : 235px;
         }
-
-div .port img, div .parc img {
-        height : 440px;
+.activity h4 {
+        padding-top: 0.5em;
+        }
+        
+div .port img, div .parc img, div .fort img, div .iles img, div .garde img, div .longchamp img {
+        width: 100%;
+        border-radius: 20px 20px 0 0 ;
+        object-fit : cover;
         }
 
+div .port img, div .parc img {
+        height : 440px;        
+        }
+
+div .fort img {
+        height : 220px;
+        }
+
+div .iles img {
+        height : 130px;
+        }
+div .garde img, div .longchamp img {
+        height : 175px;
+        }
 
 /*footer*/
 
 footer  {
         background-color: #F2F2F2; 
+        }
+.footer {        
+        display : flex;
+        height : 200px;
+        }
+.footerSection {        
+        display : flex;
+        flex-direction: column;
+        padding: 40px 270px 0 10px;
+        }
+        
+.footerSection ul{        
+        padding :0;
+        }
+.footerSection ul li{        
+        padding-top: 1em;
+        }
+.footerSection > li{        
+        font-weight: 700;
         }

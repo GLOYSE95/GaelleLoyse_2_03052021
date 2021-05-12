@@ -18,7 +18,7 @@
 <!--header -->
         <header class="header">
             <div class="logoReservia">
-                <img src="logo/Reservia.svg" alt="logo Reservia">
+                <img class="headerLogo" src="logo/Reservia.svg" alt="logo Reservia">
             </div>
             <nav>
                 <ul>
@@ -38,7 +38,7 @@
 
 <!--form : research form -->
             <div class="searchBox">
-                <div><i class="fas fa-map-marker-alt"></i></div>
+                <div classe="marker"><i class="fas fa-map-marker-alt"></i></div>
                 <div><form id="" method="post" action="">Marseilles, France  </form></div>
                 <div><buttom type="submit"> Rechercher </buttom></div>
             </div>
@@ -49,10 +49,10 @@
                     <h3>Filtres</h3>
                 </div>
                 <div class="filtersButton">        
-                    <button><i class="fas fa-money-bill-wave"></i> Economique</button>
-                    <button> <i class="fas fa-child"></i>  Familial</button>
-                    <button><i class="fas fa-heart"></i> Romantique</button>
-                    <button><i class="fas fa-dog"></i> Animaux autorisés</button>
+                    <button><div class="icone"><i class="fas fa-money-bill-wave"></i></div>Economique</button>
+                    <button><div class="icone"><i class="fas fa-child"></i></div>Familial</button>
+                    <button><div class="icone"><i class="fas fa-heart"></i></div>Romantique</button>
+                    <button><div class="icone"><i class="fas fa-dog"></i></div>Animaux autorisés</button>
                 </div>
             </div>
             <div class="info">
@@ -300,28 +300,38 @@
 
         </div>
 
-        <footer>
-        <div class="footer">
-            <ul>
-                <li>A propos</li>
+<!--Footer -->
+
+        <footer> 
+        <ul class="footer">
+           
+            <div class="footerSection">
+                <li><h3>A propos</h3></li>
                     <ul>
                         <li><a href=""></a>Fonctionnement du site</a></li>
                         <li><a href=""></a>Conditions générales de vente</a></li>
                         <li><a href=""></a>Données et confidentialités</a></li>
-                    </ul>
-                <li>Nos hébergements</li>
+                    </ul>        
+            </div>
+
+            <div class="footerSection">
+                <li><h3>Nos hébergements</h3></li>
                     <ul>
                         <li><a href=""></a>Charte qualité</a></li>
                         <li><a href=""></a>Soumettre votre hôtel</a></li>
                     </ul>
-                <li>Assistance</li>
+            </div>
+   
+            <div class="footerSection">
+                <li><h3>Assistance</h3></li>
                     <ul>
                         <li><a href="">Centre d'aide</a></li>
                         <li><a href="">Nous contacter</a></li>
                     </ul>
-            </ul>
-
                 </div>
+
+        </ul>
+
         </footer>
     </div>  
 </body>

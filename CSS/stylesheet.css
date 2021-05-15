@@ -19,6 +19,8 @@ header  {
         padding: 30px 50px 0 50px ;
         }
 div .logoReservia img {
+        padding-top: 2rem;
+
         height: auto; 
         width : 110px;
         object-fit: auto;
@@ -29,6 +31,7 @@ nav ul  {
         }
 nav li  {
         padding-left: 80px;
+        padding-top: 2rem;
         color: #0065fc; 
         font-weight:700;
         font-size: 1.2rem;    
@@ -40,6 +43,8 @@ nav a:visited {
         color: #0065fc; 
         }       
 nav a:hover {
+        border-top: 3px solid #0065fc;
+        padding-top: 2rem;
         opacity:0.5;
         text-decoration: none;
         }
@@ -70,6 +75,7 @@ nav a:hover {
         width : 100%;
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
         margin-top: 25px;
         }
         

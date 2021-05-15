@@ -127,28 +127,20 @@ ul      {
 /* accomodation & Popular*/       
 
 .AccomodationPopular { 
-        display: flex; 
-        margin: 50px;
+        display: block; 
+        margin: auto;
         }
 
 .accomodation {
-        width: 65%; 
         height: auto;
-        padding:30px 0 0px 30px;
         border-radius: 30px;
         }
 
 .popular {
-        width:30%; 
-        padding:30px 30px 0 30px;
-        margin-left: 30px;
         border-radius: 30px;
         }
 
-.accomodation, .popular {
-        background-color: #F2F2F2; 
-        margin-bottom:15px;
-        }         
+      
 
 /*article Accomodation & Popular*/
 

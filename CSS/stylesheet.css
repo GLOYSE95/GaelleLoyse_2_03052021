@@ -15,18 +15,16 @@ header  {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0px 40px 0 50px ;
+        padding: 0px 50px 0 50px ;
         }
 div .logoReservia img {
         padding-top: 1.5rem;
-    
-        height: auto; 
         width : 110px;
-        object-fit: auto;
         }
     
 nav ul  {
         display: flex;
+        margin-right: 20px;
         }
 nav li  {
         padding-left: 80px;
@@ -34,6 +32,9 @@ nav li  {
         color: #0065fc; 
         font-weight:700;
         font-size: 1rem;    
+        }
+nav li a[ href="#aActivity" ] {
+        color: black;
         }
 a       {
         text-decoration: none;
@@ -101,6 +102,9 @@ form    {
         color: white;
         padding: 0 1em 0 1em;
         }
+.info {
+        padding-left: 50px;
+}
  
 /*filters*/ 
     
@@ -109,22 +113,24 @@ form    {
         display: flex;
         align-items: center;
         flex-wrap: wrap;
-        margin-top: 25px;
+        margin-top: 30px;
         }
         
 .filtersButton {
         display: flex;
         flex-wrap: wrap;
-        text-decoration: none;
         }
         
-button {
+.button {
         display: flex;
         align-items: center;
-        padding: 0 1rem 0 0;
-        background-color: white;
-        border-radius: 1.5rem; 
+        height : 50px;
+        padding: 0 1.5rem 0 0;
+        margin-right: 30px;
+        border-radius: 2rem; 
         border: 1px solid #aaa1a1;
+        font-size: 1.2rem;
+        font-weight:700;         
         }
     
 .filtersButton i {
@@ -136,14 +142,14 @@ button {
 div .icone{
         display: flex;
         justify-content: center; 
-        width : 2.5rem;
-        height: 2.5rem;
-        margin-right : 0.8rem;
+        width : 50px;
+        height: 50px;
+        margin-right : 1.1rem;
         border-radius: 1.5rem; 
         background-color: #DEEBFF;
         }     
     
-button:hover {
+.button:hover {
         color: #0065fc; 
         opacity:0.5;
         } 
@@ -152,7 +158,7 @@ button:hover {
 .info {
         display: flex;
         align-items: center;
-        margin: 10px 0 10px 0;
+        margin: 30px 0 10px 0;
         }
     
 .fa-info {
@@ -375,31 +381,30 @@ div .iles img {
 div .garde img, div .longchamp img {
         height : 175px;
         }
+.activity h4 {
+        padding-left: 10px;
+}
     
     /*footer*/
     
 footer  {
-        background-color: #F2F2F2; 
+        background-color: #F2F2F2;
+        padding: 30px 100px 0 50px;
         }
 .footer {        
         display : flex;
         width: 72%;
-        justify-content: space-between;
         height : 250px;
         }
+
 .footerSection {        
         display : flex;
-        flex-direction: column;
-        padding: 40px 0 0 10px;
         }
         
 .footerSection ul{        
         padding :0;
         }
+
 .footerSection ul li{        
         padding-top: 1rem;
         }
-.footerSection > li{        
-        font-weight: 700;
-        }
-    

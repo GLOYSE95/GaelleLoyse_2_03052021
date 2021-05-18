@@ -1,63 +1,59 @@
- 
+html    {
+        font-size: 0.9rem;
+        }
+
 /* header*/
 header  {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0px 20px 0 20px ;
+        display : block;
+        padding: 0px ;
         }
-/*        
+       
 div .logoReservia img {
-        padding-top: 1.5rem;
-        width : 110px;
+        position: relative;
+        padding: 1rem 0 20px 20px;
+        width : 95px;
         }
-    
 nav ul  {
-        display: flex;
-        margin-right: 20px;
+        display:flex;
+        justify-content: space-around;
+        padding : 0;
+        margin :0;
         }
 nav li  {
-        padding-left: 80px;
-        padding-top: 1.5rem;
-        color: #0065fc; 
-        font-weight:700;
-        font-size: 1rem;    
+        padding: 0 0 20px 0;
+        margin-right: 0;
+        margin-bottom: 20px;
+        font-size: 1.1rem; 
+        text-align: center;
         }
-nav li a[ href="#aActivity" ] {
-        color: black;
+nav li:nth-child(1){
+        flex: 1;
+        border-bottom: 3px solid #0065fc;
         }
-a       {
-        text-decoration: none;
+nav li:nth-child(2){
+        flex: 1;
+        border-bottom: 3px solid  #F2F2F2; ;
         }
-nav a:visited {
-        color: #0065fc; 
-        }       
+nav li:nth-child(3){
+        position: absolute;
+        right : 20px;
+        top: 30px;
+        }
+      
 nav a:hover {
-        border-top: 3px solid #0065fc;
-        padding-top: 1.5rem;
-        opacity:0.5;
-        text-decoration: none;
+        border-top: 0;
+        border-bottom: 0px solid #0065fc;
         }
     
 /*searchzone*/ 
     
 .searchZone {
-        padding: 0 0 0 50px; 
+        padding: 0 20px 0 20px; 
         }
-.searchTitle p {
-        padding: 0.5rem 0 5px 0;
-        }
+
 .searchBox {
-        display:flex;
-        margin-top: 15px;
-        justify-content: space-between;
-        align-items: center;
-        width: 450px; 
-        height: 50px;
-        border: 1px solid #aaa1a1;
-        border-radius: 15px ; 
-        font-size: 1.1rem;
-        font-weight:700;     
+        margin-top: 20px;
+        max-width: 100%; 
         }
 
 .fa-map-marker-alt {
@@ -85,71 +81,48 @@ form    {
         }
 
 .searchBox :nth-child(3){
-        height: 50px;
-        border-radius: 0 15px 15px 0;
-        background-color: #0065fc;
-        line-height: 3em;
-        color: white;
-        padding: 0 1em 0 1em;
+        display : none;
         }
-.info {
-        padding-left: 50px;
-}
- 
-/*filters*/ 
-    
-.filters {
-        width : 100%;
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        margin-top: 30px;
-        }
-        
-.filtersButton {
-        display: flex;
-        flex-wrap: wrap;
-        }
-        
-.button {
-        display: flex;
-        align-items: center;
-        height : 50px;
-        padding: 0 1.5rem 0 0;
-        margin-top: 0.5em;
-        margin-right: 30px;
-        border-radius: 2rem; 
-        border: 1px solid #aaa1a1;
-        font-size: 1.2rem;
-        font-weight:700;         
-        }
-    
-.filtersButton i {
-        display: flex;
-        align-items: center;       
-        color: #0065fc;
-        }
-    
-div .icone{
-        display: flex;
-        justify-content: center; 
+.searchIcone{
+        display:flex;
         width : 50px;
         height: 50px;
-        margin-right : 1.1rem;
-        border-radius: 1.5rem; 
-        background-color: #DEEBFF;
-        }     
-    
-.button:hover {
-        color: #0065fc; 
-        opacity:0.5;
-        } 
+        border-radius: 0 15px 15px 0; 
+        background-color: #0065fc;
+        color :white; 
+        }
+.fa-search {
+        font-size: 1.1em;
+        margin :auto;
+        }        
 
-    
+.info   {
+        padding-left: 20px;
+        }
+ 
+
+/*filters*/   
+.filters {
+        max-width: 600px; 
+        margin-top: 30px;
+        }
+.filtersButton {
+        justify-content: space-between;
+        }        
+.button {
+        padding: 0 1rem 0 0;
+        margin-top: 0.8em;
+        margin-right: 0px;
+        font-size: 1.1rem;
+        letter-spacing: -0.02em;
+        }
+
+div .icone {
+        margin-right : 0.8rem;
+        }      
 .info {
-        display: flex;
-        align-items: center;
-        margin: 30px 0 10px 0;
+        align-items: baseline;
+        margin: 30px 20px 10px 0;
         }
     
 .fa-info {
@@ -165,15 +138,10 @@ div .icone{
     /*text*/
     
 h1      {
-        font-family: 'Raleway', Arial, Helvetica, sans-serif; 
-        font-weight:700;
-        font-size: 1.5rem;
-        margin: 20px 0 0 0;
-        letter-spacing : -0.03rem;
-        color :black;
+        font-size: 1.4rem;
         }
 
-p       { 
+p       {
         padding :  0 0 0 0.5rem;
         margin : 0 0 8px 0;
         }
@@ -186,9 +154,7 @@ h2      {
         }
 
 h3, button, input {
-        font-size: 1.2rem;
-        font-family: 'Raleway', Arial, Helvetica, sans-serif;
-        font-weight:700; 
+        font-size: 1.1rem;
         }
 
 h3, button {
@@ -196,202 +162,109 @@ h3, button {
         } 
 
 h4      {
-        font-size: 1.1rem;
-        letter-spacing : -0.03rem;
         margin: 0.5em 0 0.5em 0.5rem;
         }
-
-.note   {
-        margin: 0 0 0.5rem 0.5rem;        
-        }
-
-.fa-star {
-        color: #0065fc;
-        font-size: 0.8rem;
-        letter-spacing : -0.2rem; 
-        } 
-
-a:visited {
-        color:inherit;
-        }
-
-ul      {
-        list-style-type: none;
-        }
     
-    /* accomodation & Popular*/       
+/* accomodation & Popular*/       
     
 .AccomodationPopular { 
-        display: flex; 
-        flex-wrap: wrap;
-        justify-content: space-between;
-        margin: 50px;
+        margin: 0;
         }
     
 .accomodation {
-        max-width:900px;
-        min-width : 798px;
-        height: auto;
-        padding:40px 0 0px 40px;
-        border-radius: 30px;
+        order :2;
+        flex:100%;
+        background-color: white;
+        width: 100%;
+        max-width:100%;
+        margin: 0 20px 0 20px;
+        padding:0;        
         }
-    
+            
 .popular {
-        max-width:380px;
-        min-width : 280px;
-        padding:40px 40px 0 40px;
-        border-radius: 30px;
-        }
-    
-.accomodation, .popular {
+        width: 100%;
+        max-width:100%;
+        padding:20px 20px 20px 20px;
+        border-radius: 0px;
         background-color: #F2F2F2; 
-        margin-bottom:15px;
+        margin-bottom:10px;
+        margin-top:20px;
         }         
     
 /*article Accomodation & Popular*/
     
 .articles {
         width: 100%;
-        display: flex;
-        flex-wrap: wrap;
         }
     
 .articleAccomodation, .articlePopular {
         background-color: white;
-        border-radius: 30px;
-        padding: 8px;
-        box-shadow: 0px 0px 10px rgb(88, 84, 84);
+        border-radius: 20px;
+        padding: 6px;
         }  
 
 .articleAccomodation {
-        max-width: 250px;
-        min-width: 220px;
-        margin-right: 30px;
-        margin-bottom: 30px;
+        width : 100%;
+        margin-right: 0px;
+        margin-bottom: 20px;
         } 
         
-div .more {
-        margin : 10px 0 40px 0;       
-        }
-    
 .articlePopular {
-        display: flex;
-        width: 100%;
-        margin-bottom: 40px;
-        padding-right: 40px;
+        margin-bottom: 20px;
+        padding-right: 10px;
         }        
     
 div .imgAccomodation img {
-        height: 110px;
         width: 100%;
+        max-height: 120px;
         border-radius: 20px 20px 0 0;
-        object-fit : cover;
-        }
-    
-.fa-chart-line {
-        font-size: 1.5rem;
-        }
-.pictoPopular {
-        display: flex;
-        justify-content: space-between;
-        align-items: baseline;
-        } 
-
-
-.articlePopular > a {   
-        display: flex;
-        } 
+        }           
     
 div .imgPopular img {
-        width: 100%;
-        height: 100%;
-        border-radius: 20px 0 0 20px ;
-        object-fit : cover;
-        }
-div .imgPopular {
-        margin-right: 1rem;
-        width: 40%;
-        height: 140px;
-        object-fit : cover;
-        }
-div .textPopular  { 
-        width: 60% ;
+        border-radius: 15px 0 0 15px ;
         }
 
-div .textPopular i { 
-       padding-top: 2.3em;
-       }
     
 /*article Activity*/
     
 .activity {
-        margin : 0 20px 0 50px; 
+        margin : 0 20px 0 20px; 
         }
-        
-.activityPort, .activityFort, .activityIles, .activityCalanques, .activityLongchamp, .activityGarde {
-        width: 335px;
-        margin : 0 30px 30px 0;
+
+.activity div article  {
+        margin : 0 0px 20px 0;
+        max-width:100%;
         background-color: white;
         border-radius: 20px;
-        box-shadow: 0px 0px 10px rgb(88, 84, 84);
-        }
-    
-.activityPort, .activityCalanques {
-        height : 500px;
-        }
-    
-.activityFort {
-        height : 280px;
-        }
-.activityIles {
-        height : 190px;
-        }
-.activityLongchamp, .activityGarde {
-        height : 235px;
-        }
+        height : 190px
+        }         
 .activity h4 {
         padding-top: 0.5rem;
+        padding-left: 10px;
         }
-        
-div .port img, div .parc img, div .fort img, div .iles img, div .garde img, div .longchamp img {
+
+.activity div img   {
         width: 100%;
         border-radius: 20px 20px 0 0 ;
         object-fit : cover;
-        }
-    
-div .port img, div .parc img {
-        height : 440px;        
-        }
-    
-div .fort img {
-        height : 220px;
-        }
-    
-div .iles img {
         height : 130px;
-        }
-div .garde img, div .longchamp img {
-        height : 175px;
-        }
-.activity h4 {
-        padding-left: 10px;
-}
+        }     
+
     
     /*footer*/
     
 footer  {
         background-color: #F2F2F2;
         margin-top: 20px;
-        padding: 0 100px 0 50px;
+        padding: 0 0 0 50px;
         }
 .footer {        
-        display : flex;
-        width: 72%;
-        height : 250px;
+        width: 100%;
+        height: auto;
         }
 
 .footerSection {        
-        display : flex;
+        flex-direction: column;
         }
         
 .footerSection ul{        
@@ -399,5 +272,5 @@ footer  {
         }
 
 .footerSection ul li{        
-        padding-top: 1rem;
+        padding-top: 0.8rem;
         }

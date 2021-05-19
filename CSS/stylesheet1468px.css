@@ -1,0 +1,89 @@
+h4      {
+        font-size: 1rem;
+        }
+    
+/* accomodation & Popular*/       
+    
+.AccomodationPopular {
+        margin: 40px;
+        }
+    
+.accomodation, .popular {
+        flex : 100%;
+        justify-content: space-around;
+        padding:30px 30px 0 30px;
+        margin-right: 0px;
+        background-color: #F2F2F2; 
+        }
+
+/*article Accomodation & Popular*/
+        
+.articleAccomodation, .articlePopular {
+        width: 28%;
+        }  
+
+.articleAccomodation {
+        margin-right: 0px;
+        }
+
+.articlePopular {
+        height: 160px;
+        padding-right: 15px;
+        }            
+
+div .imgPopular {
+        margin-right: 0.8rem;
+        }
+
+/*article Activity*/
+    
+.activity {
+        margin : 0 50px 0 50px; 
+        }
+.articles { 
+        justify-content: space-between;
+        }
+
+.activity div article  {
+        max-width: 440px;
+        min-width: 180px;
+
+        margin : 0 2px 20px 0;
+        height : 190px;
+        }   
+.activity div   { 
+        display: flex; 
+        flex-wrap: wrap;
+        justify-content: start;
+        }
+.activity div > article {
+        min-width: 440px;
+        margin-right: 20px; }
+
+.activityPort{
+        margin-right : 0 ;
+        }
+
+/*
+.activity div article  {
+        width : 100%;
+        max-width: none;
+        min-width: 350px;
+        margin : 0 20px 20px 0;
+        height : 190px;
+        }     */  
+
+.activity .articles :nth-child(1){
+        order : 3;
+        }
+
+.activity .articles :nth-child(3){
+        order : 4;
+        }    
+        
+
+
+
+.activity div img {
+        height : 130px;
+        }    
